@@ -1,27 +1,56 @@
-# MCP (Multi-Cloud Platform) Learning Repository
+# MCP (Model Context Protocol) Learning Repository
 
 ## What is MCP?
 
-MCP (Multi-Cloud Platform) is a comprehensive cloud management solution that enables organizations to manage and operate across multiple cloud environments seamlessly. It provides a unified interface for managing:
+MCP (Model Context Protocol) is a protocol designed to enable AI models to interact with various system components and services in a standardized way. It provides a structured approach for:
 
-- Multiple cloud providers (AWS, Azure, GCP, etc.)
-- Infrastructure as Code (IaC)
-- Cloud resources and services
-- Security and compliance
-- Cost optimization
-- Performance monitoring
+- File system operations
+- System commands
+- API interactions
+- Tool integrations
+- Context management
 
-## Key Features of MCP
+## Key Components of MCP
 
-1. **Unified Management**: Single pane of glass for managing multiple cloud environments
-2. **Automation**: Streamlined deployment and management processes
-3. **Security**: Centralized security policies and compliance management
-4. **Cost Control**: Optimize cloud spending across platforms
-5. **Monitoring**: Real-time monitoring and analytics
+1. **Protocol Definition**: Standardized way for models to request and receive information
+2. **Server Components**: Various servers handling different types of operations (filesystem, API, etc.)
+3. **Tool Integration**: Ability to integrate with different tools and services
+4. **Context Management**: Handling context and state for model interactions
+
+## Configuration Example
+
+Basic MCP filesystem server configuration:
+```json
+{
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "<workspace_path>"
+      ]
+    }
+}
+```
 
 ## Purpose of this Repository
 
-This repository serves as a learning ground for MCP concepts, best practices, and implementations. Here you'll find examples, tutorials, and documentation related to MCP usage and development.
+This repository serves as a learning ground for understanding and implementing the Model Context Protocol (MCP). Here you'll find:
+- Examples of MCP configurations
+- Usage patterns
+- Best practices
+- Implementation guides
+
+## Getting Started
+
+1. Install MCP server components:
+   ```bash
+   npm install @modelcontextprotocol/server-filesystem
+   ```
+
+2. Configure your MCP servers
+3. Implement protocol handlers
+4. Test model interactions
 
 ---
 Feel free to contribute and learn together!
